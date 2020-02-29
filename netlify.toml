@@ -1,10 +1,16 @@
 [build]
-command = """hugo \
-  --source exampleSite \
-  --config exampleSite/config.toml \
-  --themesDir ../.. \
-  --theme repo \
-  --baseURL https://wizardly-kepler-26537b.netlify.com.com"""
+  publish = "exampleSite/public"
+  command = "cd exampleSite && hugo"
+
+[context.production]
+  [context.production.environment]
+    HUGO_VERSION = "0.60.1"
+    HUGO_BASEURL = "https://wizardly-kepler-26537b.com/"
+
+# PR previews
+[context.deploy-preview]
+  command = "cd exampleSite && hugo -b ${DEPLOY_PRIME_URL}"
+  [context.deploy-preview.environment]
 
 
   #publish = "exampleSite/public"
