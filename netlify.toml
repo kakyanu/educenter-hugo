@@ -1,6 +1,6 @@
 [build]
   publish = "exampleSite/public"
-  command = "cd exampleSite && hugo --gc --themesDir ../.. -t repo --baseURL https://wizardly-kepler-26537b.netlify.com/"
+  command = "cd exampleSite && hugo --gc --themesDir ../.. -t repo --baseURL https://binainsanstb.netlify.com/"
 
 [build.environment]
   HUGO_VERSION = "0.60.1"
