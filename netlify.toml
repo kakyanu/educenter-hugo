@@ -5,7 +5,7 @@
 [context.production]
   [context.production.environment]
     HUGO_VERSION = "0.60.1"
-    HUGO_BASEURL = "https://wizardly-kepler-26537b.com/"
+    HUGO_BASEURL = "https://wizardly-kepler-26537b.netlify.com/"
 
 # PR previews
 [context.deploy-preview]
