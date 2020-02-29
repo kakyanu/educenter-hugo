@@ -1,6 +1,14 @@
 [build]
-  publish = "exampleSite/public"
-  command = "cd exampleSite && hugo --gc --themesDir ../.."
+command = """hugo \
+  --source exampleSite \
+  --config exampleSite/config.toml \
+  --themesDir ../.. \
+  --theme repo \
+  --baseURL https://wizardly-kepler-26537b.netlify.com.com"""
+
+
+  #publish = "exampleSite/public"
+  #command = "cd exampleSite && hugo --gc --themesDir ../.."
   
 [build.environment]
   HUGO_VERSION = "0.60.1"
